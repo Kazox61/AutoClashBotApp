@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.instances {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .instance {
+        padding: 20px;
+        border: 1px solid $soft-bg;
+        display: flex;
+        justify-content: space-around;
+
+        .information {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+
+            button {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+                
+                
+            }
+
+            .icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
